@@ -1,0 +1,117 @@
+body,html {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    background: #fff;
+  }
+  .menu-list { 
+    padding: 0; 
+    list-style: none;
+    width: 600px;
+    text-align: center;
+    position: relative;
+    margin: 11px;
+    display: flex;
+  }
+  
+  li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+
+  .menu {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .menu:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .menu:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+  
+.instalogo{
+  width: 20px;
+  height: 20px;
+  color: #fff
+}
+
+.tiktoklogo{
+  width: 18px;
+  top: 16px;
+  left: 62px;
+  color: #fff;
+}
+
+.overnav{
+    overflow: hidden;
+    position: relative;
+    height: 60px;
+    background-color: #000;
+}
+
+.mainnav{
+  overflow: hidden;
+  position:sticky;
+  color: #fff;
+  border: 1px solid #888; /* Grey outline color */
+  height: 100px;
+  align-items: center;
+}
+
+.cart,
+.heart,
+.search {
+  display: flex;
+  align-items: center;
+  float: right;
+  position: relative;
+  margin-top: 27px;
+  margin-right: 10px;
+}
+
+.cart-text,
+.heart-text,
+.search-text {
+  color: black;
+  padding-right: 5px;
+}
+
+.cart-icon{
+  width: 24px;
+  height: 23px;
+  padding-right: 15px;
+}
+
+.heart-icon {
+  width: 26px;
+  height: 22px;
+  padding-right: 10px;
+}
+
+.search-icon {
+  width: 28px;
+  height: 28px;
+  padding-right: 10px;
+}
