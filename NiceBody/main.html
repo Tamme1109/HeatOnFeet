@@ -3,45 +3,150 @@
 <head>
 <title>HeatOnFeet
 </title>
+<link rel="stylesheet" href="webstyle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 </head>
-<overnav>
-    <link rel="stylesheet" href="webstyle.css">
+<body>
     <nav class = "overnav">
-            <p class="text">
-                Fri frakt på order över 4999kr
-            </p>
-            <p class="text">                
-                Spana in våra senaste skor <a class="header" href="#"> här! </a>
-            </p>
-            <p class="text">
-                Se vår bästsäljande skor <a class="header" href="#" > här. </a>
-            </p> 
-            <a href="http://www.instagram.com/heatonfeet040/">                      
-                <img class= instalogo src="images/instalogo.png" alt="instagram logo"/>
+        <div class="text-container">
+            <p class="text">Fri frakt på order över 4999kr</p>
+            <p class="text">Spana in våra senaste skor&thinsp;&thinsp;<a class="link" href="w"> här! </a></p>
+            <p class="text">Se vår bästsäljande skor&thinsp;&thinsp;<a class="link" href="e"> här! </a></p> 
+        </div>
+            <a class="test" href="http://www.instagram.com/heatonfeet040/">                      
+                <img class= "instalogo" src="images/instalogo.png" alt="instagram logo"/>
             </a>
-            <a href="https://www.tiktok.com/@heatonfeet040">
-                <img class= tiktoklogo src="images/tiktoklogo.png" alt="tiktok logo"/>
+            <a class="test" href="https://www.tiktok.com/@heatonfeet040">
+                <img class= "tiktoklogo" src="images/tiktoklogo.png" alt="tiktok logo"/>
             </a>
     </nav>
     <nav class="mainnav">
-        <div class="cart">
-            <p class="cart-text">Varukorg</p>
-            <img class="cart-icon" src="images/pngwing.com.png" alt="shopping cart">
+        <a href="1">
+            <div class="cart">
+                <p class="cart-text">Varukorg</p>
+                <img class="cart-icon" src="images/pngwing.com.png" alt="shopping cart"/>
+            </div>
+        </a>
+        
+        <a href ="2">
+            <div class="heart">
+                <p class="heart-text">Favoriter</p>
+                <img class="heart-icon" src="images/heart.png" alt="favoriter">
+            </div>
+        </a>
+        
+        <a href="3">
+            <div class="search">
+                <p class="search-text">Sök</p>
+                <img class="search-icon" src="images/magnifying-glass.png" alt="sök">
+            </div>
+        </a>
+
+        <div class="image-container">
+            <img class="hof" src="images/hof.jpg" alt="logo">
         </div>
 
-        <div class="heart">
-            <p class="heart-text">Favoriter</p>
-            <img class="heart-icon" src="images/heart.png" alt="favoriter">
-        </div>
-        <div class="search">
-            <p class="search-text">Sök</p>
-            <img class="search-icon" src="images/magnifying-glass.png" alt="sök">
-        </div>
         <ul class="menu-list">
             <li><a class="menu" href="#">FAQ</a></li>
             <li><a class="menu" href="#">Sneakers</a></li>
             <li><a class="menu" href="#">Tillbehör</a></li>
         </ul>
     </nav>
+
+    <div class="picslide">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="blackjordan" src="images/j4.png" alt="bild">
+                    <p class="swipetext">Air Jordans</p>
+                    <button class="shopbutton">SHOP MODELS</button>
+            </div>
+              <div class="swiper-slide">
+                <img class="campus" src="images/ab.png" alt="bild">
+                <p class="swipetext2">Adidas Campus 00 </p>
+                <button class="shopbutton2">SHOP COLORWAYS</button>
+            </div>
+            <div class="swiper-slide">
+                <img class="dunk" src="images/dunk.png" alt="bild">
+                <p class="swipetext3">Nike Dunks & 
+                        <br>Nike SB Dunks </p>
+                <button class="shopbutton3">SHOP MODELS</button>
+            </div>
+        </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+        
+          </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="webscript.js"></script>
+    <div class="container">
+        <div class="header">
+            <div class="nav-pointer" id="prev-pointer">&lt;</div>
+            <div class="title">SENASTE RELEASES</div>
+            <div class="nav-pointer" id="next-pointer">&gt;</div>
+        </div>
+        <div class="listProduct">
+        </div>
+    </div>
+    <div class="brands">
+        <a class="nike" href="nike">
+             <img src="images/nike.jpg" alt="nike" class="nike">   
+        </a>
+        <a class="adidas" href="adidas">
+            <img src="images/nike.jpg" alt="adidas" class="adidas"> 
+        </a>
+        <a class="nb" href="nb">
+            <img src="images/nike.jpg" alt="nb" class="nb">
+         </a>
+        <a class="others" href="other">
+            <img src="images/nike.jpg" alt="others" class="others">
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We are an online store dedicated to providing you with the best products at the best prices. Customer satisfaction is our top priority.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: support@shop.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Shopping St, Shop City, SH 45678</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 YourShop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
     </body>
   </html>
