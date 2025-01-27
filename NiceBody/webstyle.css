@@ -444,11 +444,11 @@ img.adidas, img.nike, img.nb, img.others {
 
 .footer-section h2 {
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .footer-section p, .footer-section ul, .footer-section li {
-  margin: 0;
+  margin: 2px;
   padding: 0;
   list-style: none;
 }
@@ -464,6 +464,9 @@ img.adidas, img.nike, img.nb, img.others {
 .footer-section ul li a {
   color: #fff;
   text-decoration: none;
+  display: block;
+  margin: 5px;
+  text-align: center;
 }
 
 .footer-section ul li a:hover {
